@@ -5,26 +5,26 @@ programa {
 
     escreva("Quantos litros? ")
     leia(litros)
-    escreva("Qual combustÌvel? ")
-    escreva("A = ¡lcool:")
+    escreva("Qual combust√≠vel? ")
+    escreva("A = √Ålcool:")
     escreva(" ou G = Gasolina:")
     leia(combustivel)
 
     se(litros <= 25 e combustivel == "A"){
       total = litros * precoA
-      totalDesconto = (total * litros) - total
+      totalDesconto = (total * 0.02) - total
       escreva("Valor a pagar: R$", total) 
     }senao se(litros > 25 e combustivel == "A"){
       total = litros * precoA
-      totalDesconto = (total * litros) - total
+      totalDesconto = (total * 0.04) - total
       escreva("Valor a pagar: R$", total)
     }senao se(litros <= 25 e combustivel == "G"){
       total = litros * precoG
-      totalDesconto = (total * litros) - total 
+      totalDesconto = (total * 0.03) - total 
       escreva("Valor a pagar: R$", total)
     }senao se(litros > 25 e combustivel == "G"){
       total = litros * precoG
-      totalDesconto = (total * litros) - total
+      totalDesconto = (total * 0.05) - total
       escreva("Valor a pagar: R$", total)
     }senao{}
   }
