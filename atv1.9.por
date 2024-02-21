@@ -4,9 +4,9 @@ programa {
 
     escreva("Sua renda mensal: ")
     leia(rendaMensal)
-    escreva("Quantidade do empréstimo: ")
+    escreva("Quantidade do emprÃ©stimo: ")
     leia(emprestimo)
-    escreva("Quantas prestações? ")
+    escreva("Quantas prestaÃ§Ãµes? ")
     leia(prestacoes)
 
     prestacoes = rendaMensal * 0.3
@@ -14,12 +14,9 @@ programa {
     emprestimo = rendaMensal * 10
 
     escreva("\nRenda mensal: R$", rendaMensal, " Reais")
-    escreva("\nPrestações: R$", prestacoes, " Reais")
-    escreva("\nEmpréstimo: R$", emprestimo, " Reais")
+    escreva("\nPrestaÃ§Ãµes: R$", prestacoes, " Reais")
+    escreva("\nEmprÃ©stimo: R$", emprestimo, " Reais")
 
 
-    //prestações 30% a renda mensal
-
-    //emprestomo 10 vezes maior a renda mensal do solucionante  
   }
 }
