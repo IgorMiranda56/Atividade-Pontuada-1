@@ -1,6 +1,7 @@
 programa {
   funcao inicio() {
-    real emprestimo, rendaMensal, prestacoes
+    real emprestimo, rendaMensal
+    inteiro prestacoes
 
     escreva("Sua renda mensal: ")
     leia(rendaMensal)
@@ -8,13 +9,15 @@ programa {
     leia(emprestimo)
     escreva("Quantas prestações? ")
     leia(prestacoes)
+    
+    se(emprestimo <= rendaMensal * 10 e (emprestimo / prestacoes) <= (rendaMensal * 0.3)){
+    	escreva("\nEmpréstimo concedido.")
+    }senao{
+    	escreva("\nEmpréstimo recusado.")
+    }
 
-    prestacoes = rendaMensal * 0.3
-
-    emprestimo = rendaMensal * 10
-
-    escreva("\nRenda mensal: R$", rendaMensal, " Reais")
-    escreva("\nPrestações: R$", prestacoes, " Reais")
+    escreva("\n\nRenda mensal: R$", rendaMensal, " Reais")
+    escreva("\nPrestações: ", prestacoes)
     escreva("\nEmpréstimo: R$", emprestimo, " Reais")
 
 
